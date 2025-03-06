@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/orcamento.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/JavaScript" src="script.js" defer></script>
+    <title>Calculo de orçamento</title>
+</head>
+<body>
+    <header>
+        <h1>Cálculo de orçamento</h1>
+        <div>
+            <section id="Customer_registration">
+                <p>Nome: <input type="text" name="TxtName" id="Name"></p>
+                <p>CPF/CNPJ: <input type="text" name="TxtIndent" id="Identification"></p>
+                <P>E-mail: <input type="text" name="TxtMail" id="Mail"></P>
+                <P>Telefone: <input type="text" name="TxtPhone" id="CellPhone"></P>
+            </section>
+            <picture>
+                <img src="src/restaurante.jpg" alt="logo da empresa">
+            </picture>
+        </div>
+    </header>
+    <main>
+        <aside id="Side_bar">
+            <label for="intNumber">Quantidade de pessoas: <input type="number" name="intNumber" id="Number_people"></label>
+            <label for="DateParty">Selecione um dia: <input type="date" id="Date" name="DateParty"></label>
+            <label for="hora">Selecione um horário: <input type="time" id="Time" name="hora"></label>
+            <button id="Party_type">Tipo de festa</button>
+            <button id="Savory_snack">Salgados/quantidade</button>
+            <button id="Drinks">Bebidas</button>
+            <button id="Party_place">Local do evento</button>
+        </aside>
+        <section id="content">
+            <div id="Place_SS">
+                vão ficar as informações dos Salgados
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Trabalho Anhanguera - Ciências da computação 4 periodo</p>
+        <p>Gustavo Henrique, Symon, Silas, Eduardo e Charles</p>
+    </footer>
+</body>
+</html>
