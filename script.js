@@ -18,7 +18,6 @@ const placePartyType = document.querySelector('#Place_party_Type');
 const PlaceDrink = document.querySelector('#Place_Drink');
 const PlaceParty = document.querySelector('#Place_Party');
 
-
 function SelectTypeParty() {
     if (placePartyType.style.display === "none" || placePartyType.style.display === "" || content.style.display === "none") {
         placePartyType.style.display = "block";
