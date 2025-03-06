@@ -28,19 +28,33 @@
             <label for="intNumber">Quantidade de pessoas: <input type="number" name="intNumber" id="Number_people"></label>
             <label for="DateParty">Selecione um dia: <input type="date" id="Date" name="DateParty"></label>
             <label for="hora">Selecione um horário: <input type="time" id="Time" name="hora"></label>
-            <button id="Party_type">Tipo de festa</button>
-            <button id="Savory_snack">Salgados/quantidade</button>
-            <button id="Drinks">Bebidas</button>
-            <button id="Party_place">Local do evento</button>
+            <button id="Party_type" onclick="SelectTypeParty()">Tipo de festa</button>
+            <button id="Snack" onclick="SelectSnack()">Salgados/quantidade</button>
+            <button id="Drinks" onclick="SelectDrink()">Bebidas</button>
+            <button id="Party_place" onclick="SelectPartyPlace()">Local do evento</button>
         </aside>
         <section id="content">
-            <div id="Place_SS">
-                vão ficar as informações dos Salgados
+
+            <div id="Place_Snack" class="button_result" style="display: block;">
+                <h1>Salgados</h1>
             </div>
+
+            <div id="Place_party_Type" class="button_result" style="display: none;">
+                <h1>Tipo do evento</h1>
+            </div>
+
+            <div id="Place_Drink" class="button_result" style="display: none;">
+                <h1>Bebidas</h1>
+            </div>
+
+            <div id="Place_Party" class="button_result" style="display: none;">
+                <h1>Local da festa</h1>
+            </div>
+
         </section>
     </main>
     <footer>
-        <p>Trabalho Anhanguera - Ciências da computação 4 periodo</p>
+        <p>Trabalho Anhanguera - Ciências da computação 4 período</p>
         <p>Gustavo Henrique, Symon, Silas, Eduardo e Charles</p>
     </footer>
 </body>
