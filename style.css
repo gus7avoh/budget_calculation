@@ -74,7 +74,6 @@ main{
 #Side_bar{
     display: flex; 
     height: auto;
-    min-width: 40%;
     width: 100%;
     padding: 10px;
     flex-direction: column;
@@ -94,7 +93,7 @@ main{
     background: linear-gradient(45deg, white, transparent);
 }
 #content {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 60%;
@@ -121,7 +120,7 @@ footer{
     align-items: center;
     flex-direction: column;
     gap: 5px;
-    margin-top: 5px;
+    margin-top: 30px;
 }
 footer > p{
     padding: 0px;

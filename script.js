@@ -27,10 +27,12 @@ function SelectTypeParty() {
         Snack.style.display = "none";
         PlaceDrink.style.display = "none";
         PlaceParty.style.display = "none";
+        sideBar.style.width = "40%"
         
     } else {
         placePartyType.style.display = "none";
         content.style.display = "none";
+        sideBar.style.width = "100%"
     }
 }
 function SelectSnack(){
@@ -41,10 +43,12 @@ function SelectSnack(){
         placePartyType.style.display = "none";
         PlaceDrink.style.display = "none";
         PlaceParty.style.display = "none";
+        sideBar.style.width = "40%"
         
     } else {
         Snack.style.display = "none";
         content.style.display = "none";
+        sideBar.style.width = "100%"
     }
 }
 
@@ -56,10 +60,12 @@ function SelectDrink(){
         placePartyType.style.display = "none";
         Snack.style.display = "none";
         PlaceParty.style.display = "none";
+        sideBar.style.width = "40%"
         
     } else {
         PlaceDrink.style.display = "none";
         content.style.display = "none";
+        sideBar.style.width = "100%"
     }
 }
 
@@ -72,9 +78,11 @@ function SelectPartyPlace(){
         placePartyType.style.display = "none";
         Snack.style.display = "none";
         PlaceDrink.style.display = "none";
+        sideBar.style.width = "40%"
         
     } else {
         content.style.display = "none";
         PlaceParty.style.display = "none";
+        sideBar.style.width = "100%"
     }
 }
