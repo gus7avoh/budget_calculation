@@ -111,7 +111,17 @@ main{
     box-shadow: 2PX 2PX 3PX BLACK;
     border: 3px solid #16C66F;
     background-color: #59F28C;
+}
 
+#Place_Snack >  h1{
+    text-align: center;
+}
+#Place_Snack >  h2{
+    font-size: 1em;
+}
+#Place_Snack > form input{
+    width: 50px;
+   
 }
 
 footer{
