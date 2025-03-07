@@ -217,15 +217,40 @@ main {
     width: 100%;
     height: auto;
 }
+#formAdrass{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#formAdrass > input{
+    height: 20px;
+    padding: 10px;
+}
+#cidade{
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+}
+#submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, white 50%, transparent);
+    font-size: 1em;
+}
 
-/* Rodapé */
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 5px;
-    margin-top: 30px;
+    margin-top: 30px;   
 }
 
 footer > p {
