@@ -1,144 +1,176 @@
+/* Responsividade */
 @media screen and (max-width: 730px) {
-    img,picture {
+    img, picture {
         display: none;
     }
 }
 
-
-body{
+/* Estilos gerais */
+body {
     background-color: #e8d3b64e;
     font-family: Arial, Helvetica, sans-serif;
     height: max-content;
-    padding: 0px;
+    padding: 0;
     color: #341A17;
 }
-header{
-    padding: 0px 10px 10px 10px;
+
+/* Cabeçalho */
+header {
+    padding: 0 10px 10px;
     box-sizing: border-box;
 }
-header > div{
+
+header > div {
     display: flex;
     justify-content: space-between;
-    gap: auto;
     border-radius: 10px;
-    box-shadow: 2PX 2PX 3PX BLACK;
+    box-shadow: 2px 2px 3px black;
     border: 3px solid #59F28C;
-    
     height: auto;
 }
-header > h1{
+
+header > h1 {
     color: #A30000;
     margin: auto;
     text-align: center;
     font-size: 2.5em;
     padding-bottom: 4px;
 }
-#Customer_registration{
+
+#Customer_registration {
     padding: 10px;
     font-weight: bolder;
 }
+
+/* Imagens */
 picture {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20%; 
+    width: 20%;
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-img{
+img {
     max-height: 180px;
     height: 100%;
-    max-width: 180px; 
+    max-width: 180px;
     width: 100%;
     border-radius: 10px;
 }
-input{
+
+/* Inputs */
+input {
     border-radius: 10px;
     height: 20px;
     border: 1px solid black;
 }
-#Name{
+
+#Name, #Mail {
     min-width: 400px;
 }
-#Mail{
-    min-width: 400px;
-}
-main{
+
+/* Layout principal */
+main {
     margin: auto;
     display: flex;
     gap: 10px;
     padding: 10px;
 }
-#Side_bar{
-    display: flex; 
+
+#Side_bar {
+    display: flex;
     height: auto;
     width: 100%;
     padding: 10px;
     flex-direction: column;
     gap: 20px;
     border-radius: 10px;
-    box-shadow: 2PX 2PX 3PX BLACK;
+    box-shadow: 2px 2px 3px black;
     border: 3px solid #59F28C;
 }
-#Number_people{
+
+#Number_people {
     width: 80px;
 }
-#Side_bar > button{
+
+#Side_bar > button {
     width: auto;
-    max-width:200px;
+    max-width: 200px;
     height: 30px;
     border-radius: 10px;
     background: linear-gradient(45deg, white, transparent);
 }
+
 #content {
     display: none;
     align-items: center;
     justify-content: center;
     width: 60%;
     min-height: 390px;
-    height: auto; 
+    height: auto;
 }
 
 .button_result {
-    width: 100%;  
+    width: 100%;
     min-height: 390px;
-    height: auto; 
+    height: auto;
     border-radius: 10px;
     padding: 10px;
-    box-sizing: border-box; /* Evita que padding afete o tamanho total */
-    box-shadow: 2PX 2PX 3PX BLACK;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 3px black;
     border: 3px solid #16C66F;
     background-color: #81f3a7;
 }
 
-#Place_Snack >  h1{
+/* Botões de Snacks */
+#Snack_buttons {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+    width: 50%;
+    align-items: center;
 }
 
-#Place_Snack >  h2{
+#Snack_buttons > button {
+    display: flex;
+    width: 90px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #81f3a7;
+    background: linear-gradient(45deg, white 70%, transparent);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+#Place_Snack > h2 {
     font-size: 1em;
 }
 
-.quantidade-input{
+.quantidade-input {
     width: 50px;
 }
 
-#Place_Snack > section{
+#Place_Snack > section {
     display: flex;
     justify-content: space-between;
 }
 
-#Place_Snack > section > form > label{
+#Place_Snack > section > form > label {
     display: flex;
     justify-content: space-between;
     gap: 5px;
     align-items: center;
 }
 
-#Quantity{
+/* Quantidade */
+#Quantity {
     background-color: #A30000;
     max-height: 170px;
     height: auto;
@@ -149,13 +181,16 @@ main{
     font-weight: bolder;
     color: white;
 }
-#Quantity > div{
+
+#Quantity > div {
     background-color: white;
     width: 100px;
     height: 30px;
     border-radius: 10px;
 }
-footer{
+
+/* Rodapé */
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,8 +198,9 @@ footer{
     gap: 5px;
     margin-top: 30px;
 }
-footer > p{
-    padding: 0px;
-    margin: 0px;
+
+footer > p {
+    padding: 0;
+    margin: 0;
     font-size: 0.8em;
 }

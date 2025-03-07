@@ -18,6 +18,11 @@ const placePartyType = document.querySelector('#Place_party_Type');
 const PlaceDrink = document.querySelector('#Place_Drink');
 const PlaceParty = document.querySelector('#Place_Party');
 
+const fritosForm = document.querySelector("#fritos");
+const assadosForm = document.querySelector("#assados");
+const folhadosForm = document.querySelector("#folhados");
+
+
 function SelectTypeParty() {
     if (placePartyType.style.display === "none" || placePartyType.style.display === "" || content.style.display === "none") {
         placePartyType.style.display = "block";
@@ -83,5 +88,31 @@ function SelectPartyPlace(){
         content.style.display = "none";
         PlaceParty.style.display = "none";
         sideBar.style.width = "100%"
+    }
+}
+
+
+function ShowFritos(){
+    if(fritosForm.style.display === 'none' || fritosForm.style.display === ""){
+        fritosForm.style.display = 'block';
+
+        assadosForm.style.display = 'none';
+        folhadosForm.style.display =  'none';
+    }
+}
+function ShowFolhados(){
+    if(folhadosForm.style.display === 'none' || folhadosForm.style.display === ""){
+        folhadosForm.style.display = 'block';
+
+        assadosForm.style.display = 'none';
+        fritosForm.style.display =  'none';
+    }
+}
+function ShowAssados(){
+    if(assadosForm.style.display === 'none' || assadosForm.style.display === ""){
+        assadosForm.style.display = 'block';
+
+        fritosForm.style.display = 'none';
+        folhadosForm.style.display =  'none';
     }
 }
