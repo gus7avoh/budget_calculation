@@ -22,6 +22,11 @@ const fritosForm = document.querySelector("#fritos");
 const assadosForm = document.querySelector("#assados");
 const folhadosForm = document.querySelector("#folhados");
 
+const botao1 = document.querySelector("#botao1");
+const botao2 = document.querySelector("#botao2");
+const botao3 = document.querySelector("#botao3");
+const botao4 = document.querySelector("#botao4");
+
 
 function SelectTypeParty() {
     if (placePartyType.style.display === "none" || placePartyType.style.display === "" || content.style.display === "none") {
@@ -116,3 +121,35 @@ function ShowAssados(){
         folhadosForm.style.display =  'none';
     }
 }
+
+botao1.addEventListener("click", function() {
+    botao1.style.background = 'rgba(143, 203, 223, 0.57)';
+
+    botao2.style.background = '';
+    botao3.style.background = '';
+    botao4.style.background = '';
+});
+
+botao2.addEventListener("click", function() {
+    botao2.style.background = 'rgba(143, 203, 223, 0.57)';
+
+    botao1.style.background = '';
+    botao3.style.background = '';
+    botao4.style.background = '';
+});
+
+botao3.addEventListener("click", function() {
+    botao3.style.background = 'rgba(143, 203, 223, 0.57)';
+
+    botao2.style.background = '';
+    botao1.style.background = '';
+    botao4.style.background = '';
+});
+
+botao4.addEventListener("click", function() {
+    botao4.style.background = 'rgba(143, 203, 223, 0.57)';
+
+    botao2.style.background = '';
+    botao3.style.background = '';
+    botao1.style.background = '';
+});

@@ -151,6 +151,10 @@ main {
     font-size: 1em;
     font-weight: bolder;
 }
+#Snack_buttons > button:hover{
+    padding: 20px;
+    box-shadow: 2px 2px 3px black;
+}
 
 .Sub_title{
     font-size: 1em;
@@ -201,6 +205,9 @@ main {
 #Grid_party_type > button{
     border-radius: 10px;
     background: linear-gradient(45deg, white 50%, transparent);
+    font-size: 0.9em;
+    padding: 0px;
+    
 }
 #Grid_party_type > button:hover{
     background: linear-gradient(45deg, #16c66e90, transparent);
