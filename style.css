@@ -3,6 +3,9 @@
     img, picture {
         display: none;
     }
+    #Grid_party_type{
+        flex-direction: column;
+    }
 }
 
 /* Estilos gerais */
@@ -149,7 +152,7 @@ main {
     font-weight: bolder;
 }
 
-#Place_Snack > h2 {
+.Sub_title{
     font-size: 1em;
 }
 
@@ -187,6 +190,25 @@ main {
     width: 100px;
     height: 30px;
     border-radius: 10px;
+}
+
+#Grid_party_type{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: auto;
+}
+#Grid_party_type > button{
+    border-radius: 10px;
+    background: linear-gradient(45deg, white 50%, transparent);
+}
+#Grid_party_type > button:hover{
+    background: linear-gradient(45deg, #16c66e90, transparent);
+    box-shadow: 1px 1px 5px black;
+}
+#Grid_party_type > button img{
+    width: 100%;
+    height: auto;
 }
 
 /* Rodapé */
