@@ -115,11 +115,66 @@
             </div>
 
 
+
+
+
             <div id="Place_Drink" class="button_result" style="display: none;">
                 <h1>Bebidas</h1>
+                <div id="Drink_buttons">
+                    <button onclick="ShowAlcolicas()">Alcolicos</button>
+                    <button onclick="ShowRefrigerante()">Refrigerantes</button>
+                    <button onclick="ShowSucos()">Sucos</button>
+                    <button onclick="ShowEnergetico()">Sucos</button>
+                </div>
                 <h2 class="Sub_title">selecione o tipo de bebida: </h2>
+                <section>
+                    <form id="Cervejas" style="display: none;">
+                        <h3>Cervejas</h3>
+                        <label><input type="checkbox" name="Bebida" value="cerveja_skol"> Skol <input type="number" id="quantidade_cerveja_skol" name="quantidade_cerveja_skol" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="cerveja_brahma"> Brahma <input type="number" id="quantidade_cerveja_brahma" name="quantidade_cerveja_brahma" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="cerveja_antarctica"> Antarctica <input type="number" id="quantidade_cerveja_antarctica" name="quantidade_cerveja_antarctica" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="cerveja_heineken"> Heineken <input type="number" id="quantidade_cerveja_heineken" name="quantidade_cerveja_heineken" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="cerveja_budweiser"> Budweiser <input type="number" id="quantidade_cerveja_budweiser" name="quantidade_cerveja_budweiser" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="cerveja_stella"> Stella Artois <input type="number" id="quantidade_cerveja_stella" name="quantidade_cerveja_stella" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="cerveja_bohemia"> Bohemia <input type="number" id="quantidade_cerveja_bohemia" name="quantidade_cerveja_bohemia" min="0" class="quantidade-input"></label><br>
+                    </form>
+                    
+                    <form id="Refrigerantes" style="display: block;">
+                        <h3>Refrigerantes</h3>
+                        <label><input type="checkbox" name="Bebida" value="refrigerante_coca"> Coca-Cola <input type="number" id="quantidade_refrigerante_coca" name="quantidade_refrigerante_coca" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="refrigerante_guarana"> Guaraná Antarctica <input type="number" id="quantidade_refrigerante_guarana" name="quantidade_refrigerante_guarana" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="refrigerante_fanta"> Fanta <input type="number" id="quantidade_refrigerante_fanta" name="quantidade_refrigerante_fanta" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="refrigerante_schweppes"> Schweppes <input type="number" id="quantidade_refrigerante_schweppes" name="quantidade_refrigerante_schweppes" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="refrigerante_sprite"> Sprite <input type="number" id="quantidade_refrigerante_sprite" name="quantidade_refrigerante_sprite" min="0" class="quantidade-input"></label><br>
+                    </form>
+                    
+                    <form id="Sucos" style="display: none;">
+                        <h3>Sucos</h3>
+                        <label><input type="checkbox" name="Bebida" value="suco_laranja"> Suco de Laranja <input type="number" id="quantidade_suco_laranja" name="quantidade_suco_laranja" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="suco_uva"> Suco de Uva <input type="number" id="quantidade_suco_uva" name="quantidade_suco_uva" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="suco_maca"> Suco de Maçã <input type="number" id="quantidade_suco_maca" name="quantidade_suco_maca" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="suco_maracuja"> Suco de Maracujá <input type="number" id="quantidade_suco_maracuja" name="quantidade_suco_maracuja" min="0" class="quantidade-input"></label><br>
+                    </form>
+                    
+                    <form id="Energeticos" style="display: none;">
+                        <h3>Energéticos</h3>
+                        <label><input type="checkbox" name="Bebida" value="energetico_redbull"> Red Bull <input type="number" id="quantidade_energetico_redbull" name="quantidade_energetico_redbull" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="energetico_monster"> Monster <input type="number" id="quantidade_energetico_monster" name="quantidade_energetico_monster" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="energetico_vibe"> Vibe <input type="number" id="quantidade_energetico_vibe" name="quantidade_energetico_vibe" min="0" class="quantidade-input"></label><br>
+                        <label><input type="checkbox" name="Bebida" value="energetico_tnt"> TNT <input type="number" id="quantidade_energetico_tnt" name="quantidade_energetico_tnt" min="0" class="quantidade-input"></label><br>
+                    </form>
 
+                    <div id="Quantity">
+                        <p>Sugestão de maximo: <div id="MaxInput"></div> </p>
+
+                        <p>Quantidade atual: <div id="MaxInput"></div></p>
+                    </div>
+                </section>                       
             </div>
+
+
+
+
 
             <div id="Place_Party" class="button_result" style="display: none;">
                 <h1>Local da festa</h1>
