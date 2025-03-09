@@ -1,20 +1,8 @@
-const name = document.querySelector("#Name");
-const identification = document.querySelector("#Identification");
-const mail = document.querySelector("#Mail");
-const cellPhone = document.querySelector("#CellPhone");
-const numberPeople = document.querySelector("#Number_people");
-const date = document.querySelector("#Date");
-const time = document.querySelector("#Time");
-const partyType = document.querySelector("#Party_type");
-const drinks = document.querySelector("#Drinks");
-const partyPlace = document.querySelector("#Party_place");
 const sideBar = document.querySelector("#Side_bar");
 const content = document.querySelector("#content");
-const placeSS = document.querySelector("#Place_SS");
-const customerRegistration = document.querySelector("#Customer_registration");
 
-const Snack = document.querySelector("#Place_Snack");
 const placePartyType = document.querySelector('#Place_party_Type');
+const Snack = document.querySelector("#Place_Snack");
 const PlaceDrink = document.querySelector('#Place_Drink');
 const PlaceParty = document.querySelector('#Place_Party');
 
@@ -27,6 +15,10 @@ const botao2 = document.querySelector("#botao2");
 const botao3 = document.querySelector("#botao3");
 const botao4 = document.querySelector("#botao4");
 
+const alcolicas = document.querySelector("#Cervejas");
+const refrigerantes = document.querySelector("#Refrigerantes");
+const sucos = document.querySelector("#Sucos");
+const energeticos = document.querySelector("#Energeticos");
 
 function SelectTypeParty() {
     if (placePartyType.style.display === "none" || placePartyType.style.display === "" || content.style.display === "none") {
@@ -153,3 +145,40 @@ botao4.addEventListener("click", function() {
     botao3.style.background = '';
     botao1.style.background = '';
 });
+
+function ShowAlcolicas(){
+    if(alcolicas.style.display === "none" || alcolicas.style.display === ""){
+        alcolicas.style.display = 'block';
+
+        refrigerantes.style.display = 'none';
+        sucos.style.display = 'none';
+        energeticos.style.display = 'none';
+    }
+}
+function ShowRefrigerante(){
+    if(refrigerantes.style.display === "none" || refrigerantes.style.display === ""){
+        refrigerantes.style.display = 'block';
+
+        alcolicas.style.display = 'none';
+        sucos.style.display = 'none';
+        energeticos.style.display = 'none';
+    }
+}
+function ShowSucos(){
+    if(sucos.style.display === "none" || sucos.style.display === ""){
+        sucos.style.display = 'block';
+
+        refrigerantes.style.display = 'none';
+        alcolicas.style.display = 'none';
+        energeticos.style.display = 'none';
+    }
+}
+function ShowEnergetico(){
+    if(energeticos.style.display === "none" || energeticos.style.display === ""){
+        energeticos.style.display = 'block';
+
+        refrigerantes.style.display = 'none';
+        sucos.style.display = 'none';
+        alcolicas.style.display = 'none';
+    }
+}
