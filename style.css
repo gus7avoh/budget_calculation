@@ -34,7 +34,7 @@ header > h1 {
 }
 
 #Name, #Mail {
-    min-width: 400px;
+    max-width: 400px;
     width: auto;
 }
 
