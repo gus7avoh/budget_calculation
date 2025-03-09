@@ -34,15 +34,13 @@
             <button id="Party_place" onclick="SelectPartyPlace()">Local do evento</button>
         </aside>
         <section id="content">
-
             <div id="Place_Snack" class="button_result" style="display: none;">
-                <div class="Products_buttons">
-                    <h1>Salgados</h1>
+                <h1>Salgados</h1>
+                <div class="Products_buttons" id="Snack_button">
                     <button onclick="ShowFritos()">Fritos</button>
                     <button onclick="ShowFolhados()">Folhados</button>
                     <button onclick="ShowAssados()">Assados</button>
                 </div>
-                <h2 class="Sub_title">Selecione o tipo de salgado e sua quantidade</h2>
                 <section class="Form_Section">
                     <form id="fritos" style="display: block;">
                         <label><input type="checkbox" name="Salgado" value="coxinha_simples"> Coxinha Simples <input type="number" id="quantidade_coxinha_simples" name="quantidade_coxinha_simples" min="0" class="quantidade-input"></label><br>
@@ -102,7 +100,6 @@
                 </section>
             </div>
 
-
             <div id="Place_party_Type" class="button_result" style="display: none;">
                 <h1>Tipo do evento</h1>
                 <h2 class="Sub_title">selecione o tipo do evento: </h2>
@@ -114,20 +111,14 @@
                 </div>
             </div>
 
-
-
-
-
             <div id="Place_Drink" class="button_result" style="display: none;">
-                
+                <h1>Bebidas</h1>
                 <div class="Products_buttons">
-                    <h1>Bebidas</h1>
                     <button onclick="ShowAlcolicas()">Alcolicos</button>
                     <button onclick="ShowRefrigerante()">Refrigerantes</button>
                     <button onclick="ShowSucos()">Sucos</button>
                     <button onclick="ShowEnergetico()">Energéticos</button>
                 </div>
-                <h2 class="Sub_title">selecione o tipo de bebida: </h2>
                 <section class="Form_Section">
                     <form id="Cervejas" style="display: none;">
                         <h3>Cervejas</h3>
@@ -172,10 +163,6 @@
                     </div>
                 </section>                       
             </div>
-
-
-
-
 
             <div id="Place_Party" class="button_result" style="display: none;">
                 <h1>Local da festa</h1>
@@ -240,7 +227,7 @@
         </section>
     </main>
     <footer>
-        <p>Trabalho Anhanguera - Ciências da computação 4 período</p>
+        <p>Trabalho Anhanguera - Ciências da computação 4° período</p>
         <p>Gustavo Henrique, Symon, Silas, Eduardo e Charles</p>
     </footer>
 </body>

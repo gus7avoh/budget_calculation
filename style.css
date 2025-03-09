@@ -1,13 +1,3 @@
-/* Responsividade */
-@media screen and (max-width: 730px) {
-    img, picture {
-        display: none;
-    }
-    #Grid_party_type{
-        flex-direction: column;
-    }
-}
-
 body {
     background-color: #e8d3b64e;
     font-family: Arial, Helvetica, sans-serif;
@@ -99,9 +89,12 @@ main {
     max-width: 200px;
     height: 30px;
     border-radius: 10px;
-    background: linear-gradient(45deg, white, transparent);
+    background: linear-gradient(45deg, #e8d3b64e, white);
 }
 
+#Place_Snack > h1, #Place_Drink > h1, #Place_party_Type > h1, #Place_Party > h1{
+    text-align: center;
+}
 #content {
     display: none;
     align-items: center;
@@ -126,20 +119,26 @@ main {
 .Products_buttons {
     display: flex;
     justify-content: space-between;
+    gap: 5px;
     padding: 10px;
-    width: 50%;
+    width: 60%;
     align-items: center;
+    margin-bottom: 25px;
+    height: auto;
+}
+
+#Snack_button{
+    width:40%;
 }
 
 .Products_buttons > button {
     display: flex;
     width: auto;
-    height: 30px;
+    height: 40px;
     padding: 10px;
-    margin-left: 10px;
     border-radius: 10px;
-    border: 1px solid #81f3a7;
-    background: linear-gradient(45deg, white 70%, transparent);
+    border: 1px solid black;
+    background: linear-gradient(45deg, #e8d3b6a2, white);
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -150,10 +149,6 @@ main {
 .Products_buttons > button:hover{
     padding: 20px;
     box-shadow: 2px 2px 3px black;
-}
-
-.Sub_title{
-    font-size: 1em;
 }
 
 .quantidade-input {
@@ -259,4 +254,58 @@ footer > p {
     padding: 0;
     margin: 0;
     font-size: 0.8em;
+}
+
+
+/* Responsividade */
+@media screen and (max-width: 730px) {
+    img, picture {
+        display: none;
+    }
+    #Grid_party_type{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 930px) {
+    .Form_Section {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .Products_buttons{
+        display: grid ;
+        grid-template-columns: repeat(2, 1fr); 
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+        margin-bottom: 15px;
+    }
+
+    #Grid_party_type{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+@media screen and (max-width: 1450px) {
+    #Grid_party_type{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+        max-width: 600px;
+        width: auto;
+    }
+
+    #Grid_party_type > button{
+        border-radius: 10px;
+        background: linear-gradient(45deg, white 50%, transparent);
+        font-size: 0.9em;
+        padding: 0px;
+        max-width: 300px;
+        width: auto;
+        max-height: 300px;
+        height: auto;
+        margin: auto;
+    }
 }
