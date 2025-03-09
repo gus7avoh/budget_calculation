@@ -33,6 +33,11 @@ header > h1 {
     font-weight: bolder;
 }
 
+#Name, #Mail {
+    min-width: 400px;
+    width: auto;
+}
+
 picture {
     display: flex;
     align-items: center;
@@ -55,10 +60,6 @@ input {
     border-radius: 10px;
     height: 20px;
     border: 1px solid black;
-}
-
-#Name, #Mail {
-    min-width: 400px;
 }
 
 main {
@@ -256,8 +257,6 @@ footer > p {
     font-size: 0.8em;
 }
 
-
-/* Responsividade */
 @media screen and (max-width: 730px) {
     img, picture {
         display: none;
