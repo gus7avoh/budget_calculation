@@ -36,14 +36,14 @@
         <section id="content">
 
             <div id="Place_Snack" class="button_result" style="display: none;">
-                <div id="Snack_buttons">
+                <div class="Products_buttons">
                     <h1>Salgados</h1>
                     <button onclick="ShowFritos()">Fritos</button>
                     <button onclick="ShowFolhados()">Folhados</button>
                     <button onclick="ShowAssados()">Assados</button>
                 </div>
                 <h2 class="Sub_title">Selecione o tipo de salgado e sua quantidade</h2>
-                <section>
+                <section class="Form_Section">
                     <form id="fritos" style="display: block;">
                         <label><input type="checkbox" name="Salgado" value="coxinha_simples"> Coxinha Simples <input type="number" id="quantidade_coxinha_simples" name="quantidade_coxinha_simples" min="0" class="quantidade-input"></label><br>
                         <label><input type="checkbox" name="Salgado" value="coxinha_catupiry"> Coxinha de Catupiry <input type="number" id="quantidade_coxinha_catupiry" name="quantidade_coxinha_catupiry" min="0" class="quantidade-input"></label><br>
@@ -119,15 +119,16 @@
 
 
             <div id="Place_Drink" class="button_result" style="display: none;">
-                <h1>Bebidas</h1>
-                <div id="Drink_buttons">
+                
+                <div class="Products_buttons">
+                    <h1>Bebidas</h1>
                     <button onclick="ShowAlcolicas()">Alcolicos</button>
                     <button onclick="ShowRefrigerante()">Refrigerantes</button>
                     <button onclick="ShowSucos()">Sucos</button>
-                    <button onclick="ShowEnergetico()">Sucos</button>
+                    <button onclick="ShowEnergetico()">Energéticos</button>
                 </div>
                 <h2 class="Sub_title">selecione o tipo de bebida: </h2>
-                <section>
+                <section class="Form_Section">
                     <form id="Cervejas" style="display: none;">
                         <h3>Cervejas</h3>
                         <label><input type="checkbox" name="Bebida" value="cerveja_skol"> Skol <input type="number" id="quantidade_cerveja_skol" name="quantidade_cerveja_skol" min="0" class="quantidade-input"></label><br>
