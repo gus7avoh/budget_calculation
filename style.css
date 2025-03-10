@@ -1,310 +1,314 @@
 body {
-    background-color: #e8d3b64e;
-    font-family: Arial, Helvetica, sans-serif;
-    height: max-content;
-    padding: 0;
-    color: #341A17;
+  background-color: #e8d3b64e;
+  font-family: Arial, Helvetica, sans-serif;
+  height: max-content;
+  padding: 0;
+  color: #341a17;
 }
 
 header {
-    padding: 0 10px 10px;
-    box-sizing: border-box;
+  padding: 0 10px 10px;
+  box-sizing: border-box;
 }
 
 header > div {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px black;
-    border: 3px solid #59F28C;
-    height: auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px black;
+  border: 3px solid #59f28c;
+  height: auto;
 }
 
 header > h1 {
-    color: #A30000;
-    margin: auto;
-    text-align: center;
-    font-size: 2.5em;
-    padding-bottom: 4px;
+  color: #a30000;
+  margin: auto;
+  text-align: center;
+  font-size: 2.5em;
+  padding-bottom: 4px;
 }
 
 #Customer_registration {
-    padding: 10px;
-    font-weight: bolder;
+  padding: 10px;
+  font-weight: bolder;
 }
 
-#Name, #Mail {
-    max-width: 400px;
-    width: auto;
+#Name,
+#Mail {
+  max-width: 400px;
+  width: auto;
 }
 
 picture {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 img {
-    max-height: 180px;
-    height: 100%;
-    max-width: 180px;
-    width: 100%;
-    border-radius: 10px;
+  max-height: 180px;
+  height: 100%;
+  max-width: 180px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 input {
-    border-radius: 10px;
-    height: 20px;
-    border: 1px solid black;
+  border-radius: 10px;
+  height: 20px;
+  border: 1px solid black;
 }
 
 main {
-    margin: auto;
-    display: flex;
-    gap: 10px;
-    padding: 10px;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
 }
 
 #Side_bar {
-    display: flex;
-    height: auto;
-    width: 100%;
-    padding: 10px;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px black;
-    border: 3px solid #59F28C;
+  display: flex;
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px black;
+  border: 3px solid #59f28c;
 }
 
 #Number_people {
-    width: 80px;
+  width: 80px;
 }
 
 #Side_bar > button {
-    width: auto;
-    max-width: 200px;
-    height: 30px;
-    border-radius: 10px;
-    background: linear-gradient(45deg, #e8d3b64e, white);
+  width: auto;
+  max-width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #e8d3b64e, white);
 }
 
-#Place_Snack > h1, #Place_Drink > h1, #Place_party_Type > h1, #Place_Party > h1{
-    text-align: center;
+#Place_Snack > h1,
+#Place_Drink > h1,
+#Place_party_Type > h1,
+#Place_Party > h1 {
+  text-align: center;
 }
 #content {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    min-height: 390px;
-    height: auto;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  min-height: 390px;
+  height: auto;
 }
 
 .button_result {
-    width: 100%;
-    min-height: 390px;
-    height: auto;
-    border-radius: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-    box-shadow: 2px 2px 3px black;
-    border: 3px solid #16C66F;
-    background-color: #81f3a7;
+  width: 100%;
+  min-height: 390px;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 3px black;
+  border: 3px solid #16c66f;
+  background-color: #81f3a7;
 }
 
 .Products_buttons {
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    padding: 10px;
-    width: 60%;
-    align-items: center;
-    margin-bottom: 25px;
-    height: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 10px;
+  width: 60%;
+  align-items: center;
+  margin-bottom: 25px;
+  height: auto;
 }
 
-#Snack_button{
-    width:40%;
+#Snack_button {
+  width: 40%;
 }
 
 .Products_buttons > button {
-    display: flex;
-    width: auto;
-    height: 40px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid black;
-    background: linear-gradient(45deg, #e8d3b6a2, white);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 1em;
-    font-weight: bolder;
+  display: flex;
+  width: auto;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: linear-gradient(45deg, #e8d3b6a2, white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  font-weight: bolder;
 }
 
-.Products_buttons > button:hover{
-    padding: 20px;
-    box-shadow: 2px 2px 3px black;
+.Products_buttons > button:hover {
+  padding: 20px;
+  box-shadow: 2px 2px 3px black;
 }
 
 .quantidade-input {
-    width: 50px;
+  width: 50px;
 }
 
 .Form_Section {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .Form_Section > form > label {
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
 }
 
 #Quantity {
-    background-color: #A30000;
-    max-height: 170px;
-    height: auto;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: justify;
-    font-size: 1em;
-    font-weight: bolder;
-    color: white;
+  background-color: #a30000;
+  max-height: 170px;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: justify;
+  font-size: 1em;
+  font-weight: bolder;
+  color: white;
 }
 
 #Quantity > div {
-    background-color: white;
-    width: 100px;
-    height: 30px;
-    border-radius: 10px;
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
 }
 
-#Grid_party_type{
+#Grid_party_type {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  height: auto;
+}
+
+#Grid_party_type > button {
+  border-radius: 10px;
+  background: linear-gradient(45deg, white 50%, transparent);
+  font-size: 0.9em;
+  padding: 0px;
+}
+
+#Grid_party_type > button:hover {
+  background: linear-gradient(45deg, #16c66e90, transparent);
+  box-shadow: 1px 1px 5px black;
+}
+
+#Grid_party_type > button img {
+  width: 100%;
+  height: auto;
+}
+
+#formAdrass {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#formAdrass > input {
+  height: 20px;
+  padding: 10px;
+}
+
+#cidade {
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+}
+
+#submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, white 50%, transparent);
+  font-size: 1em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 30px;
+}
+
+footer > p {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 730px) {
+  img,
+  picture {
+    display: none;
+  }
+  #Grid_party_type {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 930px) {
+  .Form_Section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .Products_buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     margin: auto;
-    height: auto;
-}
+    padding: 0px;
+    margin-bottom: 15px;
+  }
 
-#Grid_party_type > button{
+  #Grid_party_type {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1450px) {
+  #Grid_party_type {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 600px;
+    width: auto;
+  }
+
+  #Grid_party_type > button {
     border-radius: 10px;
     background: linear-gradient(45deg, white 50%, transparent);
     font-size: 0.9em;
     padding: 0px;
-    
-}
-
-#Grid_party_type > button:hover{
-    background: linear-gradient(45deg, #16c66e90, transparent);
-    box-shadow: 1px 1px 5px black;
-}
-
-#Grid_party_type > button img{
-    width: 100%;
+    max-width: 300px;
+    width: auto;
+    max-height: 300px;
     height: auto;
-}
-
-#formAdrass{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#formAdrass > input{
-    height: 20px;
-    padding: 10px;
-}
-
-#cidade{
-    border-radius: 10px;
-    width: 200px;
-    height: 40px;
-    padding: 10px;
-}
-
-#submit{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90px;
-    height: 40px;
-    padding: 10px;
-    border-radius: 10px;
-    background: linear-gradient(45deg, white 50%, transparent);
-    font-size: 1em;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-    margin-top: 30px;   
-}
-
-footer > p {
-    padding: 0;
-    margin: 0;
-    font-size: 0.8em;
-}
-
-@media screen and (max-width: 730px) {
-    img, picture {
-        display: none;
-    }
-    #Grid_party_type{
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 930px) {
-    .Form_Section {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 20px;
-    }
-    .Products_buttons{
-        display: grid ;
-        grid-template-columns: repeat(2, 1fr); 
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: auto;
-        padding: 0px;
-        margin-bottom: 15px;
-    }
-
-    #Grid_party_type{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-    }
-}
-@media screen and (max-width: 1450px) {
-    #Grid_party_type{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 20px;
-        max-width: 600px;
-        width: auto;
-    }
-
-    #Grid_party_type > button{
-        border-radius: 10px;
-        background: linear-gradient(45deg, white 50%, transparent);
-        font-size: 0.9em;
-        padding: 0px;
-        max-width: 300px;
-        width: auto;
-        max-height: 300px;
-        height: auto;
-        margin: auto;
-    }
+    margin: auto;
+  }
 }
