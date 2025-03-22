@@ -36,6 +36,7 @@ function SelectTypeParty() {
         sideBar.style.width = "100%"
     }
 }
+
 function SelectSnack(){
     if (Snack.style.display === "none" || Snack.style.display === "" || content.style.display === "none") {
         Snack.style.display = "block";

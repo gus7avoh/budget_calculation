@@ -9,6 +9,7 @@
     <title>Calculo de orçamento</title>
 </head>
 <body>
+
     <header>
         <h1>Cálculo de orçamento</h1>
         <div>
@@ -23,6 +24,7 @@
             </picture>
         </div>
     </header>
+
     <main>
         <aside id="Side_bar">
             <label for="intNumber">Quantidade de pessoas: <input type="number" name="intNumber" id="Number_people"></label>
@@ -62,9 +64,8 @@
                         <label><input type="checkbox" name="Salgado" value="espetinho_frango"> Espetinho de Frango <input type="number" id="quantidade_espetinho_frango" name="quantidade_espetinho_frango" min="0" class="quantidade-input"></label><br>
                         <label><input type="checkbox" name="Salgado" value="espetinho_file"> Espetinho de Filé <input type="number" id="quantidade_espetinho_file" name="quantidade_espetinho_file" min="0" class="quantidade-input"></label><br>
                         <label><input type="checkbox" name="Salgado" value="bolinho_bacalhau"> Bolinho de Bacalhau <input type="number" id="quantidade_bolinho_bacalhau" name="quantidade_bolinho_bacalhau" min="0" class="quantidade-input"></label><br>
-                    </form>
-
-                    <form id="assados" style="display: none;" >
+                    </form> 
+                    <form id="assados" style="display: none;" > 
                         <label><input type="checkbox" name="Salgado" value="empada_frango"> Empada de Frango <input type="number" id="quantidade_empada_frango" name="quantidade_empada_frango" min="0" class="quantidade-input"></label><br>
                         <label><input type="checkbox" name="Salgado" value="empada_queijo"> Empada de Queijo <input type="number" id="quantidade_empada_queijo" name="quantidade_empada_queijo" min="0" class="quantidade-input"></label><br>
                         <label><input type="checkbox" name="Salgado" value="empada_frango_palmito"> Empada de Frango c/ Palmito <input type="number" id="quantidade_empada_frango_palmito" name="quantidade_empada_frango_palmito" min="0" class="quantidade-input"></label><br>
@@ -78,7 +79,6 @@
                         <label><input type="checkbox" name="Salgado" value="quiche_sonho_baiano"> Quiche Sonho Baiano (carne de sol c/ pimenta biquinho) <input type="number" id="quantidade_quiche_sonho_baiano" name="quantidade_quiche_sonho_baiano" min="0" class="quantidade-input"></label><br>
                         <label><input type="checkbox" name="Salgado" value="quiche_casa_vovo"> Quiche Casa da Vovó (Banana c/ Canela) <input type="number" id="quantidade_quiche_casa_vovo" name="quantidade_quiche_casa_vovo" min="0" class="quantidade-input"></label><br>
                     </form>
-
                     <form id="folhados" style="display: none;">
                         <label><input type="checkbox" name="Salgado" value="folhado_napolitano"> Folhado Napolitano <input type="number" id="quantidade_folhado_napolitano" name="quantidade_folhado_napolitano" min="0" class="quantidade-input"></label><br>
                         <label><input type="checkbox" name="Salgado" value="folhado_peito_peru"> Folhado de Peito de Peru <input type="number" id="quantidade_folhado_peito_peru" name="quantidade_folhado_peito_peru" min="0" class="quantidade-input"></label><br>
@@ -94,12 +94,10 @@
                     </form>
                     <div id="Quantity">
                         <p>Sugestão de maximo: <div id="MaxInput"></div> </p>
-
                         <p>Quantidade atual: <div id="MaxInput"></div></p>
                     </div>
                 </section>
             </div>
-
             <div id="Place_party_Type" class="button_result" style="display: none;">
                 <h1>Tipo do evento</h1>
                 <h2 class="Sub_title">selecione o tipo do evento: </h2>
@@ -108,7 +106,7 @@
                     <button id="botao2"><img src="src/festa-adulto.jpg" alt="festa de aniversario adulto"><p>Festa de aniversario adulto</p></button>
                     <button id="botao3"><img src="src/festa-15anos.jpg" alt="festa de 15 anos"><p>Festa de 15 anos</p></button>
                     <button id="botao4"><img src="src/foto_casamento.jpg" alt="festa de casamento"><p>Festa de casamento</p></button>
-                </div>
+                </div> 
             </div>
 
             <div id="Place_Drink" class="button_result" style="display: none;">
@@ -226,9 +224,11 @@
             </div>
         </section>
     </main>
+
     <footer>
         <p>Trabalho Anhanguera - Ciências da computação 4° período</p>
         <p>Gustavo Henrique, Symon, Silas, Eduardo e Charles</p>
     </footer>
+    
 </body>
 </html>
