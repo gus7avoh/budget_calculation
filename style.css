@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --font-titulo: 'Lobster', cursive;
+}
+
 body {
   background-color: #e8d3b64e;
   font-family: Arial, Helvetica, sans-serif;
@@ -24,8 +30,9 @@ header > h1 {
   color: #a30000;
   margin: auto;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3em;
   padding-bottom: 4px;
+  font-family: var(--font-titulo);
 }
 
 #Customer_registration {
@@ -260,38 +267,10 @@ footer > p {
   font-size: 0.8em;
 }
 
-@media screen and (max-width: 730px) {
-  img,
-  picture {
-    display: none;
-  }
-  #Grid_party_type {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 930px) {
-  .Form_Section {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 20px;
-  }
-  .Products_buttons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: auto;
-    padding: 0px;
-    margin-bottom: 15px;
-  }
-
-  #Grid_party_type {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 @media screen and (max-width: 1450px) {
+  #Grid_party_type h1, .sub_title{
+    font-size: 0.7em;
+  }
   #Grid_party_type {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -310,5 +289,72 @@ footer > p {
     max-height: 300px;
     height: auto;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  #Grid_party_type > h1, .Sub_title{
+    font-size: 1em;
+  }
+  
+  .Form_Section {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px; 
+  }
+  .Products_buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    margin-bottom: 15px;
+  }
+
+  header > h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  img,
+  picture {
+    display: none;
+  }
+
+  #Grid_party_type > h1, .Sub_title{
+    font-size: 1em;
+  }
+  
+  #Grid_party_type {
+    display: flex; 
+    gap: 20px;
+    max-width: 200px;
+    width: auto;
+    flex-direction: column;
+  }
+
+  #Grid_party_type > button {
+    border-radius: 10px;
+    background: linear-gradient(45deg, white 50%, transparent);
+    font-size: 0.9em;
+    padding: 10px;
+    width: 200px; 
+    max-height: 300px;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 445px){
+  #Grid_party_type > h1, .Sub_title{
+    font-size: 1em;
+  }
+  
+  #Grid_party_type > button {
+    width: auto;
+    padding: 5px;
   }
 }
