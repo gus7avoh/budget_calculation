@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="src/orcamento.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script type="text/JavaScript" src="script.js" defer></script>
+    <script type="text/JavaScript" src="Js_Interface.js" defer></script>
+    <script type="text/JavaScript" src="Js_Functions.js" defer></script>
     <title>Calculo de orçamento</title>
 </head>
 <body>
@@ -43,7 +44,7 @@
                     <button onclick="ShowFolhados()">Folhados</button>
                     <button onclick="ShowAssados()">Assados</button>
                 </div>
-                <section class="Form_Section">
+                <section class="Form_Section selecionar_salgados">
                     <form id="fritos" style="display: block;">
                         <label><input type="checkbox" name="Salgado" value="coxinha_simples"> Coxinha Simples <input type="number" id="quantidade_coxinha_simples" name="quantidade_coxinha_simples" min="0" class="quantidade-input"></label><br>
                         <label><input type="checkbox" name="Salgado" value="coxinha_catupiry"> Coxinha de Catupiry <input type="number" id="quantidade_coxinha_catupiry" name="quantidade_coxinha_catupiry" min="0" class="quantidade-input"></label><br>
@@ -117,7 +118,7 @@
                     <button onclick="ShowSucos()">Sucos</button>
                     <button onclick="ShowEnergetico()">Energéticos</button>
                 </div>
-                <section class="Form_Section">
+                <section class="Form_Section selecionar_bebidas">
                     <form id="Cervejas" style="display: none;">
                         <h3>Cervejas</h3>
                         <label><input type="checkbox" name="Bebida" value="cerveja_skol"> Skol <input type="number" id="quantidade_cerveja_skol" name="quantidade_cerveja_skol" min="0" class="quantidade-input"></label><br>
