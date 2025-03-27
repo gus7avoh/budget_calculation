@@ -20,6 +20,16 @@ const refrigerantes = document.querySelector("#Refrigerantes");
 const sucos = document.querySelector("#Sucos");
 const energeticos = document.querySelector("#Energeticos");
 
+const BotaoAlcolicos = document.querySelector('#Place_Drink_Alcolicos');
+const BotaoRefrigerantes = document.querySelector('#Place_Drink_Refrigerantes');
+const BotaoSucos = document.querySelector('#Place_Drink_Sucos');
+const BotaoEnergeticos = document.querySelector('#Place_Drink_Energeticos');
+
+const BotaoFritos = document.querySelector('#Products_buttons_Fritos');
+const BotaoFolhados = document.querySelector('#Products_buttons_Folhados');
+const BotaoAssados = document.querySelector('#Products_buttons_Assados');
+
+
 function SelectTypeParty() {
     if (placePartyType.style.display === "none" || placePartyType.style.display === "" || content.style.display === "none") {
         placePartyType.style.display = "block";
@@ -183,3 +193,59 @@ function ShowEnergetico(){
         alcolicas.style.display = 'none';
     }
 }
+
+BotaoFritos.style.background = 'rgba(111, 194, 221, 0.57)';
+BotaoFritos.addEventListener("click", function() {
+    BotaoFritos.style.background = 'rgba(111, 194, 221, 0.57)';
+
+    BotaoFolhados.style.background = '';
+    BotaoAssados.style.background = '';
+});
+
+BotaoFolhados.addEventListener("click", function() {
+    BotaoFolhados.style.background = 'rgba(111, 194, 221, 0.57)';
+
+    BotaoFritos.style.background = '';
+    BotaoAssados.style.background = '';
+});
+
+BotaoAssados.addEventListener("click", function() {
+    BotaoAssados.style.background = 'rgba(111, 194, 221, 0.57)';
+
+    BotaoFolhados.style.background = '';
+    BotaoFritos.style.background = '';
+});
+
+
+BotaoRefrigerantes.style.background = 'rgba(111, 194, 221, 0.57)';
+BotaoAlcolicos.addEventListener("click", function() {
+    BotaoAlcolicos.style.background = 'rgba(111, 194, 221, 0.57)';
+
+    BotaoRefrigerantes.style.background = '';
+    BotaoEnergeticos.style.background = '';
+    BotaoSucos.style.background = '';
+});
+
+BotaoRefrigerantes.addEventListener("click", function() {
+    BotaoRefrigerantes.style.background = 'rgba(111, 194, 221, 0.57)';
+
+    BotaoAlcolicos.style.background = '';
+    BotaoEnergeticos.style.background = '';
+    BotaoSucos.style.background = '';
+});
+
+BotaoEnergeticos.addEventListener("click", function() {
+    BotaoEnergeticos.style.background = 'rgba(111, 194, 221, 0.57)';
+
+    BotaoRefrigerantes.style.background = '';
+    BotaoAlcolicos.style.background = '';
+    BotaoSucos.style.background = '';
+});
+
+BotaoSucos.addEventListener("click", function() {
+    BotaoSucos.style.background = 'rgba(111, 194, 221, 0.57)';
+
+    BotaoRefrigerantes.style.background = '';
+    BotaoEnergeticos.style.background = '';
+    BotaoAlcolicos.style.background = '';
+});

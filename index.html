@@ -31,18 +31,19 @@
             <label for="intNumber">Quantidade de pessoas: <input type="number" name="intNumber" id="Number_people"></label>
             <label for="DateParty">Selecione um dia: <input type="date" id="Date" name="DateParty"></label>
             <label for="hora">Selecione a duração: <input type="time" id="Time" name="hora"></label>
+            <button id="Party_place" onclick="SelectPartyPlace()">Local do evento</button>
             <button id="Party_type" onclick="SelectTypeParty()">Tipo de festa</button>
             <button id="Snack" onclick="SelectSnack()">Salgados/quantidade</button>
             <button id="Drinks" onclick="SelectDrink()">Bebidas</button>
-            <button id="Party_place" onclick="SelectPartyPlace()">Local do evento</button>
+            <button id="Result" onclick="ShowResults()">Resultado</button> <!--Fazer todas as cofiguraçoes relacionadas a esse botao-->
         </aside>
         <section id="content">
             <div id="Place_Snack" class="button_result" style="display: none;">
                 <h1>Salgados</h1>
                 <div class="Products_buttons" id="Snack_button">
-                    <button onclick="ShowFritos()">Fritos</button>
-                    <button onclick="ShowFolhados()">Folhados</button>
-                    <button onclick="ShowAssados()">Assados</button>
+                    <button id="Products_buttons_Fritos" onclick="ShowFritos()">Fritos</button>
+                    <button id="Products_buttons_Folhados" onclick="ShowFolhados()">Folhados</button>
+                    <button id="Products_buttons_Assados" onclick="ShowAssados()">Assados</button>
                 </div>
                 <section class="Form_Section selecionar_salgados">
                     <form id="fritos" style="display: block;">
@@ -113,10 +114,10 @@
             <div id="Place_Drink" class="button_result" style="display: none;">
                 <h1>Bebidas</h1>
                 <div class="Products_buttons">
-                    <button onclick="ShowAlcolicas()">Alcolicos</button>
-                    <button onclick="ShowRefrigerante()">Refrigerantes</button>
-                    <button onclick="ShowSucos()">Sucos</button>
-                    <button onclick="ShowEnergetico()">Energéticos</button>
+                    <button id="Place_Drink_Alcolicos" onclick="ShowAlcolicas()">Alcolicos</button>
+                    <button id="Place_Drink_Refrigerantes" onclick="ShowRefrigerante()">Refrigerantes</button>
+                    <button id="Place_Drink_Sucos" onclick="ShowSucos()">Sucos</button>
+                    <button id="Place_Drink_Energeticos" onclick="ShowEnergetico()">Energéticos</button>
                 </div>
                 <section class="Form_Section selecionar_bebidas">
                     <form id="Cervejas" style="display: none;">
