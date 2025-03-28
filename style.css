@@ -180,9 +180,11 @@ main {
 }
 
 .Quantity {
-  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: #a30000;
-  max-height: 100px;
+  max-height: 170px;
   height: auto;
   padding: 10px;
   border-radius: 10px;
@@ -362,6 +364,7 @@ footer > p {
     margin: auto;
   }
 }
+
 
 @media screen and (max-width: 445px){
   #Grid_party_type > h1, .Sub_title{

@@ -95,8 +95,10 @@
                         <label><input type="checkbox" name="Salgado" value="travesseiro_camarao"> Travesseiro de Camarão <input type="number" id="quantidade_travesseiro_camarao" name="quantidade_travesseiro_camarao" min="0" class="quantidade-input"></label><br>
                     </form>
                     <div class="Quantity">
-                        <p>Sugestão de maximo: <div id="MaxInputSaldado"></div> </p>
-                        <p>Quantidade atual: <div id="AtualInputSalgado"></div></p>
+                        <p>Sugestão de maximo: </p>
+                        <input type="number" id="QuantidadeSugeridaSalgado" readonly>
+                        <p>Quantidade atual:</p>
+                        <input type="number" id="QuantidadeAtualSalgado" readonly>
                     </div>
                 </section>
             </div>
@@ -115,8 +117,8 @@
             <div id="Place_Drink" class="button_result" style="display: none;">
                 <h1>Bebidas</h1>
                 <div class="Products_buttons">
-                    <button id="Place_Drink_Alcolicos" onclick="ShowAlcolicas()">Alcolicos</button>
                     <button id="Place_Drink_Refrigerantes" onclick="ShowRefrigerante()">Refrigerantes</button>
+                    <button id="Place_Drink_Alcolicos" onclick="ShowAlcolicas()">Alcolicos</button>
                     <button id="Place_Drink_Sucos" onclick="ShowSucos()">Sucos</button>
                     <button id="Place_Drink_Energeticos" onclick="ShowEnergetico()">Energéticos</button>
                 </div>
@@ -158,8 +160,10 @@
                     </form>
 
                     <div class="Quantity">
-                        <p>Sugestão de maximo: <input type="number" id="QuantidadeSugeridaBebida"></p>
-                        <p>Quantidade atual: <input type="number" id="QuantidadeAtualBebida"></p>
+                        <p>Sugestão de maximo: </p>
+                        <input type="number" id="QuantidadeSugeridaBebida" readonly>
+                        <p>Quantidade atual:</p>
+                        <input type="number" id="QuantidadeAtualBebida" readonly>
                     </div>
 
                 </section>                       
