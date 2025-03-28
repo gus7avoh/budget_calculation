@@ -80,3 +80,9 @@ document.querySelectorAll('.selecionar_bebidas input[type="checkbox"], .quantida
         ModificarVisorBebidas();
     })     
 });
+
+
+const QuantidadePessoasNaFesta = Number(document.getElementById("Number_people").value)
+const DataFesta = document.getElementById("Date").value //Sting "2025-03-28"
+const TempoDeFesta = document.getElementById("Time").value //String "HH:MM" Devo der que converter para hora com decimais para fazer o calculo
+

@@ -5,6 +5,7 @@ const placePartyType = document.querySelector('#Place_party_Type');
 const Snack = document.querySelector("#Place_Snack");
 const PlaceDrink = document.querySelector('#Place_Drink');
 const PlaceParty = document.querySelector('#Place_Party');
+const PlaceResultado = document.querySelector('#Place_Resultado');
 
 const fritosForm = document.querySelector("#fritos");
 const assadosForm = document.querySelector("#assados");
@@ -39,6 +40,7 @@ function SelectTypeParty() {
         Snack.style.display = "none";
         PlaceDrink.style.display = "none";
         PlaceParty.style.display = "none";
+        PlaceResultado.style.display = "none";
         sideBar.style.width = "40%"
         
     } else {
@@ -56,6 +58,7 @@ function SelectSnack(){
         placePartyType.style.display = "none";
         PlaceDrink.style.display = "none";
         PlaceParty.style.display = "none";
+        PlaceResultado.style.display = "none";
         sideBar.style.width = "40%"
         
     } else {
@@ -73,6 +76,7 @@ function SelectDrink(){
         placePartyType.style.display = "none";
         Snack.style.display = "none";
         PlaceParty.style.display = "none";
+        PlaceResultado.style.display = "none";
         sideBar.style.width = "40%"
         
     } else {
@@ -91,11 +95,33 @@ function SelectPartyPlace(){
         placePartyType.style.display = "none";
         Snack.style.display = "none";
         PlaceDrink.style.display = "none";
+        PlaceResultado.style.display = "none";
+
         sideBar.style.width = "40%"
         
     } else {
         content.style.display = "none";
         PlaceParty.style.display = "none";
+        sideBar.style.width = "100%"
+    }
+}
+
+function ShowResults(){
+    if (PlaceResultado.style.display === "none" || PlaceResultado.style.display === "" || content.style.display === "none") {
+        PlaceResultado.style.display = "block";
+        content.style.display = "block";
+
+        
+        placePartyType.style.display = "none";
+        Snack.style.display = "none";
+        PlaceDrink.style.display = "none";
+        PlaceParty.style.display = "none";
+
+        sideBar.style.width = "40%"
+        
+    } else {
+        content.style.display = "none";
+        PlaceResultado.style.display = "none";
         sideBar.style.width = "100%"
     }
 }
