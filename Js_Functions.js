@@ -3,6 +3,9 @@ const Bebidas_selecionados = [];
 let QuantidadeSalgadosTotal = 0; 
 let QuantidadeBebidasTotal = 0; 
 
+//Responsavel por selecionar os campos de Salgados e verificar se o campo está marcado e se tem valor
+//Caso esteja tudo correto ele vai adicionar um novo objeto na lista Salgados_selecionados como o nome do Salgado e sua quantidade
+//Por fim ele soma todas as quantidades e adiciona a variavel QuantidadeSalgadosTotal.
 function obterValoresSelecionadosSalgados() {
     Salgados_selecionados.length = 0;
     QuantidadeSalgadosTotal = 0; 
@@ -24,6 +27,9 @@ function obterValoresSelecionadosSalgados() {
     //console.log(`Quantidade total de Salgados: ${QuantidadeSalgadosTotal}`);
 }
 
+//Responsavel por selecionar os campos de Bebidas e verificar se o campo está marcado e se tem valor
+//Caso esteja tudo correto ele vai adicionar um novo objeto na lista Bebidas_selecionados como o nome da bebida e sua quantidade
+//Por fim ele soma todas as quantidades e adiciona a variavel QuantidadeBebidasTotal.
 function obterValoresSelecionadosBebidas() {
     Bebidas_selecionados.length = 0;
     QuantidadeBebidasTotal = 0; 
@@ -45,20 +51,21 @@ function obterValoresSelecionadosBebidas() {
     //console.log(`Quantidade total de Bebidas: ${QuantidadeBebidasTotal}`);
 }
 
-
+//Responsavel por modificar o Visor de sugestoes no campo de Salgados
 function ModificarVisorSalgados(){
     const QuantidadeAtualSalgado = document.getElementById("QuantidadeAtualSalgado");
 
     QuantidadeAtualSalgado.value = QuantidadeSalgadosTotal;
 }
 
+//Responsavel por modificar o Visor de sugestoes no campo de bebidas 
 function ModificarVisorBebidas() {
     const QuantidadeAtualBebidas = document.getElementById("QuantidadeAtualBebida");
 
     QuantidadeAtualBebidas.value = QuantidadeBebidasTotal;
 }
 
-// Corrigir o addEventListener para chamar corretamente as funções
+//Esse metodo é responsavel por escutar qualeur mudança nos campos de Salgados e executar dois outros metodos caso tenha mudança
 document.querySelectorAll('.selecionar_salgados input[type="checkbox"], .quantidade-input').forEach((element) => {
     element.addEventListener('change', () => {
         obterValoresSelecionadosSalgados();
@@ -66,7 +73,7 @@ document.querySelectorAll('.selecionar_salgados input[type="checkbox"], .quantid
     });
 });
 
-
+//Esse metodo é responsavel por escutar qualeur mudança nos campos de bebida e executar dois outros metodos caso tenha mudança
 document.querySelectorAll('.selecionar_bebidas input[type="checkbox"], .quantidade-input').forEach((element) => {
     element.addEventListener('change', () => {
         obterValoresSelecionadosBebidas();
