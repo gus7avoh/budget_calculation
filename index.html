@@ -94,9 +94,9 @@
                         <label><input type="checkbox" name="Salgado" value="trouxinha_alho_poro"> Trouxinha de Alho poró <input type="number" id="quantidade_trouxinha_alho_poro" name="quantidade_trouxinha_alho_poro" min="0" class="quantidade-input"></label><br>
                         <label><input type="checkbox" name="Salgado" value="travesseiro_camarao"> Travesseiro de Camarão <input type="number" id="quantidade_travesseiro_camarao" name="quantidade_travesseiro_camarao" min="0" class="quantidade-input"></label><br>
                     </form>
-                    <div id="Quantity">
-                        <p>Sugestão de maximo: <div id="MaxInput"></div> </p>
-                        <p>Quantidade atual: <div id="MaxInput"></div></p>
+                    <div class="Quantity">
+                        <p>Sugestão de maximo: <div id="MaxInputSaldado"></div> </p>
+                        <p>Quantidade atual: <div id="AtualInputSalgado"></div></p>
                     </div>
                 </section>
             </div>
@@ -108,6 +108,7 @@
                     <button id="botao2"><img src="src/festa-adulto.jpg" alt="festa de aniversario adulto"><p>Festa de aniversario adulto</p></button>
                     <button id="botao3"><img src="src/festa-15anos.jpg" alt="festa de 15 anos"><p>Festa de 15 anos</p></button>
                     <button id="botao4"><img src="src/foto_casamento.jpg" alt="festa de casamento"><p>Festa de casamento</p></button>
+                    <button id="botao5"><img src="src/party.jpg" alt="Outros"><p>Outros</p></button>
                 </div> 
             </div>
 
@@ -156,11 +157,11 @@
                         <label><input type="checkbox" name="Bebida" value="energetico_tnt"> TNT <input type="number" id="quantidade_energetico_tnt" name="quantidade_energetico_tnt" min="0" class="quantidade-input"></label><br>
                     </form>
 
-                    <div id="Quantity">
-                        <p>Sugestão de maximo: <div id="MaxInput"></div> </p>
-
-                        <p>Quantidade atual: <div id="MaxInput"></div></p>
+                    <div class="Quantity">
+                        <p>Sugestão de maximo: <input type="number" id="QuantidadeSugeridaBebida"></p>
+                        <p>Quantidade atual: <input type="number" id="QuantidadeAtualBebida"></p>
                     </div>
+
                 </section>                       
             </div>
 
