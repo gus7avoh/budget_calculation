@@ -140,10 +140,10 @@ main {
 }
 
 #Snack_button {
-  width: 40%;
+  width: 35%;
 }
 
-.Products_buttons > button {
+/*.Products_buttons > button {
   display: flex;
   width: auto;
   height: 40px;
@@ -162,6 +162,34 @@ main {
   padding: 20px;
   box-shadow: 2px 2px 3px black;
 }
+*/
+
+.Products_buttons > button {
+  
+  display: flex;
+  width: auto;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  font-weight: bolder;
+ 
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #ff1b7b;
+  transition: background-color 0.3s ease;
+}
+
+.Products_buttons > button:hover {
+  background-color: #1ABC9C;
+}
+
+
+
 
 .quantidade-input {
   width: 50px;
