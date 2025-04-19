@@ -82,7 +82,31 @@ document.querySelectorAll('.selecionar_bebidas input[type="checkbox"], .quantida
 });
 
 
+//Nessa proxima etapa vou pegar o valor de todos os campos do site e gerar a pagina de resultado
+
+const Nome = document.getElementById("Name").value
+const CPF_CNPJ = document.getElementById("Indentificador").value
+const Email = document.getElementById("Mail").value
+const Telefone = document.getElementById("CellPhone").value
+
 const QuantidadePessoasNaFesta = Number(document.getElementById("Number_people").value)
 const DataFesta = document.getElementById("Date").value //Sting "2025-03-28"
 const TempoDeFesta = document.getElementById("Time").value //String "HH:MM" Devo der que converter para hora com decimais para fazer o calculo
+//pegar o tipo de festa
+
+const Campo_nome = document.querySelector("show_nome")
+const Campo_CPF_CNPJ = document.querySelector("show_cpf_cnpj")
+const Campo_email = document.querySelector("show_email")
+const Campo_telefone = document.querySelector("show_telefone")
+const Campo_quatidade_pessoas= document.querySelector("show_quatidade_pessoas")
+const Campo_data_festa = document.querySelector("show_data_festa")
+const Campo_tempo_festa = document.querySelector("show_tempo_festa")
+const Campo_tipo_festa = document.querySelector("show_tipo_festa")
+
+const Campo_Cep = document.querySelector("show_cep")
+const Campo_logradouro = document.querySelector("show_logradouro")
+const Campo_numero = document.querySelector("show_numero")
+const Campo_complemento = document.querySelector("show_complemento")
+const Campo_bairro = document.querySelector("show_bairro")
+const Campo_cidade = document.querySelector("show_cidade")
 

@@ -297,6 +297,40 @@ main {
   font-size: 1em;
 }
 
+#Download {
+  display: flex;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  height: 30px;
+  width: 200px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+}
+
+#show_valor_final{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100px;
+  padding: 5px;
+  font-weight: bolder;
+}
+
+#show_produtos{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 700px;
+  left: 0px;
+}
+
 footer {
   display: flex;
   justify-content: center;
