@@ -84,29 +84,72 @@ document.querySelectorAll('.selecionar_bebidas input[type="checkbox"], .quantida
 
 //Nessa proxima etapa vou pegar o valor de todos os campos do site e gerar a pagina de resultado
 
-const Nome = document.getElementById("Name").value
-const CPF_CNPJ = document.getElementById("Indentificador").value
-const Email = document.getElementById("Mail").value
-const Telefone = document.getElementById("CellPhone").value
+//pegar o valor do tipo de festa
+// vou ter que mudar isso aqui quando mudar o botao outros para a pessoa descrever qual festa
+let botoes = document.querySelectorAll("#Grid_party_type button");
+
+botoes.forEach((botao) => {
+  botao.addEventListener('click', () => {
+    var TipoDaFesta = botao.querySelector("img").alt;
+  });
+});
+
+
+const Nome = document.getElementById("Name")
+const CPF_CNPJ = document.getElementById("Identification");
+const Email = document.getElementById("Mail")
+const Telefone = document.getElementById("CellPhone")
 
 const QuantidadePessoasNaFesta = Number(document.getElementById("Number_people").value)
 const DataFesta = document.getElementById("Date").value //Sting "2025-03-28"
 const TempoDeFesta = document.getElementById("Time").value //String "HH:MM" Devo der que converter para hora com decimais para fazer o calculo
-//pegar o tipo de festa
+//o tipo da festa é o tipoDaFesta
 
-const Campo_nome = document.querySelector("show_nome")
-const Campo_CPF_CNPJ = document.querySelector("show_cpf_cnpj")
-const Campo_email = document.querySelector("show_email")
-const Campo_telefone = document.querySelector("show_telefone")
-const Campo_quatidade_pessoas= document.querySelector("show_quatidade_pessoas")
-const Campo_data_festa = document.querySelector("show_data_festa")
-const Campo_tempo_festa = document.querySelector("show_tempo_festa")
-const Campo_tipo_festa = document.querySelector("show_tipo_festa")
+let cep, rua, numero, complemento, bairro, cidade;
 
-const Campo_Cep = document.querySelector("show_cep")
-const Campo_logradouro = document.querySelector("show_logradouro")
-const Campo_numero = document.querySelector("show_numero")
-const Campo_complemento = document.querySelector("show_complemento")
-const Campo_bairro = document.querySelector("show_bairro")
-const Campo_cidade = document.querySelector("show_cidade")
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
+  cep = document.querySelector("#cep").value;
+  rua = document.querySelector("#rua").value;
+  numero = document.querySelector("#numero").value;
+  complemento = document.querySelector("#complemento").value;
+  bairro = document.querySelector("#bairro").value;
+  cidade = document.querySelector("#cidade").value;
+});
+
+
+const Campo_nome = document.querySelector("#show_nome")
+const Campo_CPF_CNPJ = document.querySelector("#show_cpf_cnpj")
+const Campo_email = document.querySelector("#show_email")
+const Campo_telefone = document.querySelector("#show_telefone")
+const Campo_quatidade_pessoas= document.querySelector("#show_quatidade_pessoas")
+const Campo_data_festa = document.querySelector("#show_data_festa")
+const Campo_tempo_festa = document.querySelector("#show_tempo_festa")
+const Campo_tipo_festa = document.querySelector("#show_tipo_festa")
+
+const Campo_Cep = document.querySelector("#show_cep")
+const Campo_logradouro = document.querySelector("#show_logradouro")
+const Campo_numero = document.querySelector("#show_numero")
+const Campo_complemento = document.querySelector("#show_complemento")
+const Campo_bairro = document.querySelector("#show_bairro")
+const Campo_cidade = document.querySelector("#show_cidade")
+
+//modificando o valor do campo para receber o dado
+
+Nome.addEventListener('input', () => {
+    Campo_nome.innerHTML = `Nome: ${Nome.value}`;
+});
+
+CPF_CNPJ.addEventListener('input', () => {
+Campo_CPF_CNPJ.innerHTML = `CPF/CNPJ: ${CPF_CNPJ.value}`;
+});
+
+Email.addEventListener('input', () => {
+Campo_email.innerHTML = `E-mail: ${Email.value}`;
+});
+
+Telefone.addEventListener('input', () => {
+Campo_telefone.innerHTML = `Telefone: ${Telefone.value}`;
+});
+  
