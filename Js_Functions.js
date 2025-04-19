@@ -80,43 +80,17 @@ document.querySelectorAll('.selecionar_bebidas input[type="checkbox"], .quantida
         ModificarVisorBebidas();
     })     
 });
-
-
 //Nessa proxima etapa vou pegar o valor de todos os campos do site e gerar a pagina de resultado
-
-//pegar o valor do tipo de festa
-// vou ter que mudar isso aqui quando mudar o botao outros para a pessoa descrever qual festa
-let botoes = document.querySelectorAll("#Grid_party_type button");
-
-botoes.forEach((botao) => {
-  botao.addEventListener('click', () => {
-    var TipoDaFesta = botao.querySelector("img").alt;
-  });
-});
-
 
 const Nome = document.getElementById("Name")
 const CPF_CNPJ = document.getElementById("Identification");
 const Email = document.getElementById("Mail")
 const Telefone = document.getElementById("CellPhone")
 
-const QuantidadePessoasNaFesta = Number(document.getElementById("Number_people").value)
-const DataFesta = document.getElementById("Date").value //Sting "2025-03-28"
-const TempoDeFesta = document.getElementById("Time").value //String "HH:MM" Devo der que converter para hora com decimais para fazer o calculo
+const QuantidadePessoasNaFesta = document.getElementById("Number_people")
+const DataFesta = document.getElementById("Date") //Sting "2025-03-28"
+const TempoDeFesta = document.getElementById("Time")//String "HH:MM" Devo der que converter para hora com decimais para fazer o calculo
 //o tipo da festa é o tipoDaFesta
-
-let cep, rua, numero, complemento, bairro, cidade;
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  cep = document.querySelector("#cep").value;
-  rua = document.querySelector("#rua").value;
-  numero = document.querySelector("#numero").value;
-  complemento = document.querySelector("#complemento").value;
-  bairro = document.querySelector("#bairro").value;
-  cidade = document.querySelector("#cidade").value;
-});
 
 
 const Campo_nome = document.querySelector("#show_nome")
@@ -153,3 +127,50 @@ Telefone.addEventListener('input', () => {
 Campo_telefone.innerHTML = `Telefone: ${Telefone.value}`;
 });
   
+QuantidadePessoasNaFesta.addEventListener('input', () => {
+    Campo_quatidade_pessoas.innerHTML = `Quantidade de pessoas: ${QuantidadePessoasNaFesta.value}`
+})
+
+DataFesta.addEventListener('change', () => {
+    Campo_data_festa.innerHTML = `Data da festa: ${DataFesta.value}`
+})
+
+TempoDeFesta.addEventListener('change', () => {
+    Campo_tempo_festa.innerHTML = `Tempo de festa: ${TempoDeFesta.value}`
+})
+
+// vou ter que mudar isso aqui quando mudar o botao outros para a pessoa descrever qual festa
+let botoes = document.querySelectorAll("#Grid_party_type button");
+botoes.forEach((botao) => {
+  botao.addEventListener('click', () => {
+    Campo_tipo_festa.innerHTML = `Tipo de festa: ${botao.querySelector("img").alt}`;
+  });
+});
+
+
+let cep, rua, numero, complemento, bairro, cidade;
+const form = document.querySelector("#formAdrass")
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  cep = document.querySelector("#cep").value;
+  rua = document.querySelector("#rua").value;
+  numero = document.querySelector("#numero").value;
+  complemento = document.querySelector("#complemento").value;
+  bairro = document.querySelector("#bairro").value;
+  cidade = document.querySelector("#cidade").value;
+
+  Campo_Cep.innerHTML = `CEP: ${cep}`
+  Campo_logradouro.innerHTML= `Logradouro: ${rua}`
+  Campo_numero.innerHTML = `Número: ${numero}`
+  Campo_complemento.innerHTML = `Complemento: ${complemento}`
+  Campo_bairro.innerHTML = `Bairro: ${bairro}`
+  Campo_cidade.innerHTML = `Cidade: ${cidade}`
+});
+
+
+//criar a modificaçao no documento para receber todos os salgados selecionados 
+Salgados_selecionados
+Bebidas_selecionados
+QuantidadeSalgadosTotal
+QuantidadeBebidasTotal
