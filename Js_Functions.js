@@ -3,6 +3,8 @@ const Bebidas_selecionados = [];
 let QuantidadeSalgadosTotal = 0; 
 let QuantidadeBebidasTotal = 0; 
 
+
+
 //Responsavel por selecionar os campos de Salgados e verificar se o campo está marcado e se tem valor
 //Caso esteja tudo correto ele vai adicionar um novo objeto na lista Salgados_selecionados como o nome do Salgado e sua quantidade
 //Por fim ele soma todas as quantidades e adiciona a variavel QuantidadeSalgadosTotal.
@@ -20,7 +22,7 @@ function obterValoresSelecionadosSalgados() {
                 quantidade: quantidade
             });
 
-            QuantidadeSalgadosTotal += quantidade; 
+            QuantidadeSalgadosTotal += quantidade;
         }
     });
     //console.log("Salgados selecionados:", Salgados_selecionados);
@@ -51,19 +53,48 @@ function obterValoresSelecionadosBebidas() {
     //console.log(`Quantidade total de Bebidas: ${QuantidadeBebidasTotal}`);
 }
 
-//Responsavel por modificar o Visor de sugestoes no campo de Salgados
+//Responsavel por modificar o Visor de sugestoes no campo de Salgados e do cumento final salados
+const Campo_Para_mostrar_salgados_relatorio_final = document.getElementById("show_salgados")
+function ExibirSalgadosRelatorioFinal() {
+    Campo_Para_mostrar_salgados_relatorio_final.innerHTML = "";
+
+    Salgados_selecionados.forEach((salgado) => {
+        const item = document.createElement("p");
+        item.textContent = `${salgado.nome}: ${salgado.quantidade}`;
+        Campo_Para_mostrar_salgados_relatorio_final.appendChild(item);
+    });
+}
+
+
+const TotalSalgados = document.getElementById("show_total_salgados") // campo do formulario final
 function ModificarVisorSalgados(){
     const QuantidadeAtualSalgado = document.getElementById("QuantidadeAtualSalgado");
 
     QuantidadeAtualSalgado.value = QuantidadeSalgadosTotal;
+    TotalSalgados.innerHTML = `<p>Total Salgados: ${QuantidadeSalgadosTotal}</p>`
+    ExibirSalgadosRelatorioFinal();
 }
 
-//Responsavel por modificar o Visor de sugestoes no campo de bebidas 
+//Responsavel por modificar o Visor de sugestoes no campo de bebidas e documento final bebidas
+const Campo_Para_mostrar_bebidas_relatorio_final = document.getElementById("show_bebidas")
+function ExibirBebidasRelatorioFinal(){
+    Campo_Para_mostrar_bebidas_relatorio_final.innerHTML = "";
+    Bebidas_selecionados.forEach((bebida) =>{
+        const item = document.createElement("p");
+        item.textContent = `${bebida.nome}: ${bebida.quantidade}`;
+        Campo_Para_mostrar_bebidas_relatorio_final.appendChild(item);
+    })
+}
+
+const TotalBebidas = document.getElementById("show_total_bebidas") //campo do formulario final 
 function ModificarVisorBebidas() {
     const QuantidadeAtualBebidas = document.getElementById("QuantidadeAtualBebida");
 
     QuantidadeAtualBebidas.value = QuantidadeBebidasTotal;
+    TotalBebidas.innerHTML = `<p>Total Bebidas (garrafa 2L): ${QuantidadeBebidasTotal}</p>`
+    ExibirBebidasRelatorioFinal();
 }
+
 
 //Esse metodo é responsavel por escutar qualeur mudança nos campos de Salgados e executar dois outros metodos caso tenha mudança
 document.querySelectorAll('.selecionar_salgados input[type="checkbox"], .quantidade-input').forEach((element) => {
@@ -170,7 +201,6 @@ form.addEventListener("submit", (event) => {
 
 
 //criar a modificaçao no documento para receber todos os salgados selecionados 
+
 Salgados_selecionados
 Bebidas_selecionados
-QuantidadeSalgadosTotal
-QuantidadeBebidasTotal
