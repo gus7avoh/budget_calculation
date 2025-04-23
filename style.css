@@ -266,6 +266,14 @@ main {
   border-top-right-radius: 10px;
 }
 
+#Other_description_div{
+  margin-top: 50px;
+}
+
+#Other_description_input{
+  width: 400px;
+}
+
 
 #formAdrass {
   display: flex;

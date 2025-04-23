@@ -31,6 +31,8 @@ const BotaoFritos = document.querySelector('#Products_buttons_Fritos');
 const BotaoFolhados = document.querySelector('#Products_buttons_Folhados');
 const BotaoAssados = document.querySelector('#Products_buttons_Assados');
 
+const CampoDescricaoBotaoOutros = document.getElementById("Other_description_div")
+const DescricaoBotaoOutros = document.getElementById("Other_description_input")
 
 function SelectTypeParty() {
     if (placePartyType.style.display === "none" || placePartyType.style.display === "" || content.style.display === "none") {
@@ -154,6 +156,7 @@ function ShowAssados(){
 
 botao1.addEventListener("click", function() {
     botao1.style.background = 'rgba(143, 203, 223, 0.57)';
+    CampoDescricaoBotaoOutros.style.display = 'none'
 
     botao2.style.background = '';
     botao3.style.background = '';
@@ -163,6 +166,8 @@ botao1.addEventListener("click", function() {
 
 botao2.addEventListener("click", function() {
     botao2.style.background = 'rgba(143, 203, 223, 0.57)';
+    CampoDescricaoBotaoOutros.style.display = 'none'
+
 
     botao1.style.background = '';
     botao3.style.background = '';
@@ -172,6 +177,7 @@ botao2.addEventListener("click", function() {
 
 botao3.addEventListener("click", function() {
     botao3.style.background = 'rgba(143, 203, 223, 0.57)';
+    CampoDescricaoBotaoOutros.style.display = 'none'
 
     botao2.style.background = '';
     botao1.style.background = '';
@@ -181,15 +187,18 @@ botao3.addEventListener("click", function() {
 
 botao4.addEventListener("click", function() {
     botao4.style.background = 'rgba(143, 203, 223, 0.57)';
+    CampoDescricaoBotaoOutros.style.display = 'none'
 
     botao2.style.background = '';
     botao3.style.background = '';
     botao1.style.background = '';
     botao5.style.background = '';
 });
+  
 
 botao5.addEventListener("click", function() {
     botao5.style.background = 'rgba(143, 203, 223, 0.57)';
+    CampoDescricaoBotaoOutros.style.display = 'block'
 
     botao2.style.background = '';
     botao3.style.background = '';

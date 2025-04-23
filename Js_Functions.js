@@ -170,13 +170,27 @@ TempoDeFesta.addEventListener('change', () => {
     Campo_tempo_festa.innerHTML = `Tempo de festa: ${TempoDeFesta.value}`
 })
 
-// vou ter que mudar isso aqui quando mudar o botao outros para a pessoa descrever qual festa
+function MudarDescricaoOutros() {
+    const Campo_tipo_festa = document.querySelector("#show_tipo_festa")
+    DescricaoBotaoOutros.addEventListener('input', () => {
+      const novaDescricao = DescricaoBotaoOutros.value;
+      botao5.querySelector("img").alt = novaDescricao;
+      Campo_tipo_festa.innerHTML = `Tipo de festa: ${novaDescricao}`;
+    });
+}
+
 let botoes = document.querySelectorAll("#Grid_party_type button");
 botoes.forEach((botao) => {
   botao.addEventListener('click', () => {
-    Campo_tipo_festa.innerHTML = `Tipo de festa: ${botao.querySelector("img").alt}`;
+    if(botao.id == "botao5"){
+        MudarDescricaoOutros()
+    }else{
+        Campo_tipo_festa.innerHTML = `Tipo de festa: ${botao.querySelector("img").alt}`;
+    }
   });
 });
+
+
 
 
 let cep, rua, numero, complemento, bairro, cidade;
@@ -199,8 +213,3 @@ form.addEventListener("submit", (event) => {
   Campo_cidade.innerHTML = `Cidade: ${cidade}`
 });
 
-
-//criar a modificaçao no documento para receber todos os salgados selecionados 
-
-Salgados_selecionados
-Bebidas_selecionados
