@@ -143,27 +143,6 @@ main {
   width: 35%;
 }
 
-/*.Products_buttons > button {
-  display: flex;
-  width: auto;
-  height: 40px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid black;
-  background: linear-gradient(45deg, #e8d3b6a2, white);
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  font-size: 1em;
-  font-weight: bolder;
-}
-
-.Products_buttons > button:hover {
-  padding: 20px;
-  box-shadow: 2px 2px 3px black;
-}
-*/
-
 .Products_buttons > button {
   
   display: flex;
@@ -434,7 +413,6 @@ footer > p {
     margin: auto;
   }
 }
-
 
 @media screen and (max-width: 445px){
   #Grid_party_type > h1, .Sub_title{

@@ -132,7 +132,7 @@ function ExibirBebidasRelatorioFinal() {
 
 // Função para mudar a descrição de "outros"
 function MudarDescricaoOutros() {
-    const DescricaoBotaoOutros = document.getElementById("Other_description_input") // por algum fuking motivo tava funcionando sem isso ????
+    const DescricaoBotaoOutros = document.getElementById("Other_description_input") // por algum fucking motivo tava funcionando sem isso ????
     DescricaoBotaoOutros.addEventListener('input', () => {
         const novaDescricao = DescricaoBotaoOutros.value;
         botao5.querySelector("img").alt = novaDescricao;
