@@ -30,6 +30,7 @@ const Campo_quatidade_pessoas = document.querySelector("#show_quatidade_pessoas"
 const Campo_data_festa = document.querySelector("#show_data_festa");
 const Campo_tempo_festa = document.querySelector("#show_tempo_festa");
 const Campo_tipo_festa = document.querySelector("#show_tipo_festa");
+let tipofesta
 
 // Campos de endereço
 const Campo_Cep = document.querySelector("#show_cep");
@@ -136,6 +137,7 @@ function MudarDescricaoOutros() {
     DescricaoBotaoOutros.addEventListener('input', () => {
         const novaDescricao = DescricaoBotaoOutros.value;
         botao5.querySelector("img").alt = novaDescricao;
+        tipofesta = novaDescricao
         Campo_tipo_festa.innerHTML = `Tipo de festa: ${novaDescricao}`;
     });
 }
@@ -203,7 +205,8 @@ botoes.forEach((botao) => {
         if(botao.id == "botao5"){
             MudarDescricaoOutros();
         } else {
-            Campo_tipo_festa.innerHTML = `Tipo de festa: ${botao.querySelector("img").alt}`;
+            tipofesta = botao.querySelector("img").alt
+            Campo_tipo_festa.innerHTML = `Tipo de festa: ${tipofesta}`;
         }
     });
 });
@@ -341,3 +344,66 @@ function MostrarValorFinalOrcamento() {
     const CampoTotalOrcamento = document.getElementById("show_valor_final");
     CampoTotalOrcamento.value = valorFinalOrcamento;
 }
+
+
+function EnviarDadosImpressao() {
+    // 1. Atualiza seleções e cálculos
+    obterValoresSelecionadosSalgados();
+    obterValoresSelecionadosBebidas();
+    funcValorSalgados();
+    funcValorBebidas();
+    MostrarValorFinalOrcamento();
+
+    // 2. Coleta os dados dos inputs
+    const valorFinalOrcamento = Number(document.getElementById("show_valor_final").value) || 0;
+
+    const nome = Nome.value;
+    const cpfCnpj = CPF_CNPJ.value;
+    const email = Email.value;
+    const telefone = Telefone.value;
+    const quantidadePessoas = Number(QuantidadePessoasNaFesta.value) || 0;
+    const dataFesta = DataFesta.value;
+    const tempoFesta = TempoDeFesta.value;
+
+    const cep = document.querySelector("#cep").value;
+    const logradouro = document.querySelector("#rua").value;
+    const numero = document.querySelector("#numero").value;
+    const complemento = document.querySelector("#complemento").value;
+    const bairro = document.querySelector("#bairro").value;
+    const cidade = document.querySelector("#cidade").value;
+
+    // 3. Monta o objeto a ser enviado
+    const orcamentoDados = {
+        valorFinalOrcamento,
+        Salgados_selecionados,
+        Bebidas_selecionados,
+        QuantidadeSalgadosTotal,
+        QuantidadeBebidasTotal,
+        tipofesta,
+        nome,
+        cpfCnpj,
+        email,
+        telefone,
+        quantidadePessoas,
+        dataFesta,
+        tempoFesta,
+        cep,
+        logradouro,
+        numero,
+        complemento,
+        bairro,
+        cidade
+    };
+
+    // 4. Grava no localStorage
+    localStorage.setItem("orcamento_dados", JSON.stringify(orcamentoDados));
+
+    // 5. Redireciona para a página de resultado
+    window.location.href = "resultado.html";
+}
+
+
+const Download = document.getElementById("Download")
+Download.addEventListener('click', () =>{
+    EnviarDadosImpressao();
+})
