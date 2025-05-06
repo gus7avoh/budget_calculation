@@ -403,7 +403,6 @@ function EnviarDadosImpressao() {
 }
 
 
-
 const Download = document.getElementById("Download")
 Download.addEventListener('click', () =>{
     EnviarDadosImpressao();
