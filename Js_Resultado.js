@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     inputValor.value = data.valorFinalOrcamento ?? "";
   
     // 3. Preenche dados do cliente
-    document.getElementById("show_nome").textContent        = `Nome: ${data.nome}`;
+    document.getElementById("show_nome").textContent       = `Nome: ${data.nome}`;
     document.getElementById("show_cpf_cnpj").textContent   = `CPF/CNPJ: ${data.cpfCnpj}`;
     document.getElementById("show_email").textContent      = `E-mail: ${data.email}`;
     document.getElementById("show_telefone").textContent   = `Telefone: ${data.telefone}`;
@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 6. Preenche produtos: salgados
     document.getElementById("show_total_salgados").textContent = 
       `Total de salgados: ${data.QuantidadeSalgadosTotal}`;
+      
     const salgadosSection = document.getElementById("show_salgados");
     data.Salgados_selecionados.forEach(item => {
       const p = document.createElement("p");

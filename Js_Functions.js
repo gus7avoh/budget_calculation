@@ -43,6 +43,87 @@ const Campo_cidade = document.querySelector("#show_cidade");
 // Formulário de endereço
 const form = document.querySelector("#formAdrass");
 
+// Definir os valores de salgados
+const salgadosValor = [
+    // Simples - R$ 0,85
+    { nome: "coxinha_simples", valor: 0.85 },
+    { nome: "risole_milho", valor: 0.85 },
+    { nome: "risole_carne", valor: 0.85 },
+    { nome: "kibe", valor: 0.85 },
+    { nome: "pao_de_queijo", valor: 0.85 },
+
+    // Folhados - R$ 1,30
+    { nome: "folhado_napolitano", valor: 1.30 },
+    { nome: "folhado_peito_peru", valor: 1.30 },
+    { nome: "folhado_romeu_julieta", valor: 1.30 },
+    { nome: "folhado_carne_sol", valor: 1.30 },
+
+    // Finos - R$ 1,90
+    { nome: "coxinha_catupiry", valor: 1.90 },
+    { nome: "croquete_presunto_mussarela", valor: 1.90 },
+    { nome: "croquete_quatro_queijos", valor: 1.90 },
+    { nome: "croquete_bacalhau", valor: 1.90 },
+    { nome: "croquete_tomate_seco", valor: 1.90 },
+    { nome: "croquete_azeitona", valor: 1.90 },
+    { nome: "croquete_ovo_codorna", valor: 1.90 },
+    { nome: "risole_marguerita_queijo", valor: 1.90 },
+    { nome: "risole_alho_poro", valor: 1.90 },
+    { nome: "risole_camarao", valor: 1.90 },
+    { nome: "camefeu_camarao", valor: 1.90 },
+    { nome: "aipim_carne_sol", valor: 1.90 },
+    { nome: "espetinho_frango", valor: 1.90 },
+    { nome: "espetinho_file", valor: 1.90 },
+    { nome: "bolinho_bacalhau", valor: 1.90 },
+    { nome: "empada_frango", valor: 1.90 },
+    { nome: "empada_queijo", valor: 1.90 },
+    { nome: "empada_frango_palmito", valor: 1.90 },
+    { nome: "empada_frango_bacon", valor: 1.90 },
+    { nome: "mini_pizza", valor: 1.90 },
+    { nome: "quiche_alho_poro", valor: 1.90 },
+    { nome: "quiche_carne_sol", valor: 1.90 },
+    { nome: "quiche_romeu_julieta", valor: 1.90 },
+    { nome: "quiche_cabra_peste", valor: 1.90 },
+    { nome: "quiche_sonho_baiano", valor: 1.90 },
+    { nome: "quiche_casa_vovo", valor: 1.90 },
+    { nome: "cata_vento_bacalhau", valor: 1.90 },
+    { nome: "trouxinha_frango_abacaxi", valor: 1.90 },
+    { nome: "damasco_bacon", valor: 1.90 },
+    { nome: "ameixa_bacon", valor: 1.90 },
+    { nome: "flor_queijo_damasco", valor: 1.90 },
+    { nome: "trouxinha_alho_poro", valor: 1.90 },
+    { nome: "travesseiro_camarao", valor: 1.90 }
+];
+
+const bebidasValor = [
+    // Refrigerantes - R$ 15
+    { nome: "refrigerante_coca", valor: 15 },
+    { nome: "refrigerante_guarana", valor: 15 },
+    { nome: "refrigerante_fanta", valor: 15 },
+    { nome: "refrigerante_schweppes", valor: 15 },
+    { nome: "refrigerante_sprite", valor: 15 },
+  
+    // Sucos - R$ 8
+    { nome: "suco_laranja", valor: 8 },
+    { nome: "suco_uva", valor: 8 },
+    { nome: "suco_maca", valor: 8 },
+    { nome: "suco_maracuja", valor: 8 },
+  
+    // Energéticos - R$ 20
+    { nome: "energetico_redbull", valor: 20 },
+    { nome: "energetico_monster", valor: 20 },
+    { nome: "energetico_vibe", valor: 20 },
+    { nome: "energetico_tnt", valor: 20 },
+  
+    // Alcoólicas - R$ 25
+    { nome: "cerveja_skol", valor: 25 },
+    { nome: "cerveja_brahma", valor: 25 },
+    { nome: "cerveja_antarctica", valor: 25 },
+    { nome: "cerveja_heineken", valor: 25 },
+    { nome: "cerveja_budweiser", valor: 25 },
+    { nome: "cerveja_stella", valor: 25 },
+    { nome: "cerveja_bohemia", valor: 25 }
+];
+
 // === Funções ===
 
 // Função para obter valores selecionados de salgados
@@ -230,91 +311,11 @@ form.addEventListener("submit", (event) => {
     Campo_cidade.innerHTML = `Cidade: ${cidade}`;
 });
 
-// === Arrays de valores dos itens ===
 
-// Definir os valores de salgados
-const salgadosValor = [
-    // Simples - R$ 0,85
-    { nome: "coxinha_simples", valor: 0.85 },
-    { nome: "risole_milho", valor: 0.85 },
-    { nome: "risole_carne", valor: 0.85 },
-    { nome: "kibe", valor: 0.85 },
-    { nome: "pao_de_queijo", valor: 0.85 },
-
-    // Folhados - R$ 1,30
-    { nome: "folhado_napolitano", valor: 1.30 },
-    { nome: "folhado_peito_peru", valor: 1.30 },
-    { nome: "folhado_romeu_julieta", valor: 1.30 },
-    { nome: "folhado_carne_sol", valor: 1.30 },
-
-    // Finos - R$ 1,90
-    { nome: "coxinha_catupiry", valor: 1.90 },
-    { nome: "croquete_presunto_mussarela", valor: 1.90 },
-    { nome: "croquete_quatro_queijos", valor: 1.90 },
-    { nome: "croquete_bacalhau", valor: 1.90 },
-    { nome: "croquete_tomate_seco", valor: 1.90 },
-    { nome: "croquete_azeitona", valor: 1.90 },
-    { nome: "croquete_ovo_codorna", valor: 1.90 },
-    { nome: "risole_marguerita_queijo", valor: 1.90 },
-    { nome: "risole_alho_poro", valor: 1.90 },
-    { nome: "risole_camarao", valor: 1.90 },
-    { nome: "camefeu_camarao", valor: 1.90 },
-    { nome: "aipim_carne_sol", valor: 1.90 },
-    { nome: "espetinho_frango", valor: 1.90 },
-    { nome: "espetinho_file", valor: 1.90 },
-    { nome: "bolinho_bacalhau", valor: 1.90 },
-    { nome: "empada_frango", valor: 1.90 },
-    { nome: "empada_queijo", valor: 1.90 },
-    { nome: "empada_frango_palmito", valor: 1.90 },
-    { nome: "empada_frango_bacon", valor: 1.90 },
-    { nome: "mini_pizza", valor: 1.90 },
-    { nome: "quiche_alho_poro", valor: 1.90 },
-    { nome: "quiche_carne_sol", valor: 1.90 },
-    { nome: "quiche_romeu_julieta", valor: 1.90 },
-    { nome: "quiche_cabra_peste", valor: 1.90 },
-    { nome: "quiche_sonho_baiano", valor: 1.90 },
-    { nome: "quiche_casa_vovo", valor: 1.90 },
-    { nome: "cata_vento_bacalhau", valor: 1.90 },
-    { nome: "trouxinha_frango_abacaxi", valor: 1.90 },
-    { nome: "damasco_bacon", valor: 1.90 },
-    { nome: "ameixa_bacon", valor: 1.90 },
-    { nome: "flor_queijo_damasco", valor: 1.90 },
-    { nome: "trouxinha_alho_poro", valor: 1.90 },
-    { nome: "travesseiro_camarao", valor: 1.90 }
-];
-
-const bebidasValor = [
-    // Refrigerantes - R$ 15
-    { nome: "refrigerante_coca", valor: 15 },
-    { nome: "refrigerante_guarana", valor: 15 },
-    { nome: "refrigerante_fanta", valor: 15 },
-    { nome: "refrigerante_schweppes", valor: 15 },
-    { nome: "refrigerante_sprite", valor: 15 },
-  
-    // Sucos - R$ 8
-    { nome: "suco_laranja", valor: 8 },
-    { nome: "suco_uva", valor: 8 },
-    { nome: "suco_maca", valor: 8 },
-    { nome: "suco_maracuja", valor: 8 },
-  
-    // Energéticos - R$ 20
-    { nome: "energetico_redbull", valor: 20 },
-    { nome: "energetico_monster", valor: 20 },
-    { nome: "energetico_vibe", valor: 20 },
-    { nome: "energetico_tnt", valor: 20 },
-  
-    // Alcoólicas - R$ 25
-    { nome: "cerveja_skol", valor: 25 },
-    { nome: "cerveja_brahma", valor: 25 },
-    { nome: "cerveja_antarctica", valor: 25 },
-    { nome: "cerveja_heineken", valor: 25 },
-    { nome: "cerveja_budweiser", valor: 25 },
-    { nome: "cerveja_stella", valor: 25 },
-    { nome: "cerveja_bohemia", valor: 25 }
-];
 
 // === Funções de cálculo de valores ===
 
+//calcualr o valor dos salgados baseado nos valores individuais 
 let somatoriaValorSalgado = 0;
 function funcValorSalgados() {
     somatoriaValorSalgado = 0;
@@ -327,6 +328,7 @@ function funcValorSalgados() {
     });
 }
 
+//calcular o valor das bebidas baseado nos valores individuais 
 let somatoriaValorBebida = 0;
 function funcValorBebidas() {
     somatoriaValorBebida = 0;
@@ -339,6 +341,7 @@ function funcValorBebidas() {
     });
 }
 
+//função para inserir o valor final do orçamento no campo de valor final da pagina de revisão
 function MostrarValorFinalOrcamento() {
     var valorFinalOrcamento = somatoriaValorSalgado + somatoriaValorBebida;
     const CampoTotalOrcamento = document.getElementById("show_valor_final");
@@ -346,6 +349,10 @@ function MostrarValorFinalOrcamento() {
 }
 
 
+// === Impresão do relatório ===
+
+
+//função para enviar os dados para a pagina de impressão
 function EnviarDadosImpressao() {
     // 1. Atualiza seleções e cálculos
     obterValoresSelecionadosSalgados();
@@ -402,7 +409,7 @@ function EnviarDadosImpressao() {
     window.location.href = "resultado.html";
 }
 
-
+//Listener para verificar se o botão de download foi acionado 
 const Download = document.getElementById("Download")
 Download.addEventListener('click', () =>{
     EnviarDadosImpressao();
